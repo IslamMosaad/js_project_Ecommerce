@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <!-- font awesome and bootstrap-->
+    <link rel="stylesheet" href="cssFiles/bootstrap.css">
+    <link rel="stylesheet" href="cssFiles/fontAwesome.css">
+    <link rel="stylesheet" href="cssFiles/style.css">
+    <title>IslamMosad's  project</title>
+</head>
+
+<body>
+  <header class="container-fluid sticky-top fs-5  bg-info bg-opacity-75">
+    <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-center " >
+      <div class="container-fluid" >
+
+        <a class="navbar-brand text-success fs-4 fw-bold " href="index.html">Islam's shop</a>
+        <a  href="cart.html" id="cartIcon" type="button" class="btn btn-success position-relative mx-4 ">
+          <i class="fa-solid fa-cart-shopping "></i>
+          <span id="numberOfProductsInCart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">about</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu bg-info bg-opacity-75" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                <li><a class="dropdown-item" href="#">Wearables</a></li>
+                <li><a class="dropdown-item" href="#">Gaming</a></li>
+                <li><a class="dropdown-item" href="#">Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Audio</a></li>
+                <li><a class="dropdown-item" href="#">Security</a></li>
+                <li><a class="dropdown-item" href="#">Computers</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+
+    
+
+    </nav>
+</header>
+
+
+<div id="cartDetails" class="container py-4 bg-light">
+
+  <div class="container py-5">
+    <h1 class="mb-4">Your Cart</h1>
+
+   <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Product Image</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+
+
+                <!--  this row for each item in the cart -->
+
+
+
+
+
+
+            </tbody>
+        </table>
+        <h3 class="h3OfTotalCost">Total Cost : <span id="totalCost">$0</span></h3>
+    <button class="btn btn-success btn-lg float-end">Confirm Order</button>
+</div>
+
+</div>
+
+
+
+
+<footer class="bg-secondary bg-opacity-25 py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-6">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" >About us</a></li>
+                  <li><a href="#" >Contact us</a></li>
+                  <li><a href="#" >Terms and conditions</a></li>
+                  <li><a href="#" >Privacy policy</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h5>Categories</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" >Electronics</a></li>
+                  <li><a href="#" >Wearables</a></li>
+                  <li><a href="#" >Gaming</a></li>
+                  <li><a href="#" >Appliances</a></li>
+                  <li><a href="#" >Audio</a></li>
+                  <li><a href="#" >Security</a></li>
+                  <li><a href="#" >Computers</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" >FAQ</a></li>
+                  <li><a href="#" >Shipping</a></li>
+                  <li><a href="#" >Returns</a></li>
+                  <li><a href="#" >Payment</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h5>Follow us</h5>
+            <div class="d-flex justify-content-around ">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          </div>
+          <div class="row mt-3 ">
+            <div class="col text-center">
+              <p class="mb-0 fw-bold ">© 2024 Islam's shop. All rights reserved.</p>
+            </div>
+          </div>
+          </div>
+          </footer>
+
+
+          <div id="scroll-icon">
+            <i class="fa-solid fa-arrow-up "></i>
+          </div>
+
+    <script src="jsFiles/bootstrap.bundle.js"></script>
+    <script src="jsFiles/fontAwesome.js"></script>
+    <script  src="jsFiles/cart.js"></script>
+</body>
+</html>

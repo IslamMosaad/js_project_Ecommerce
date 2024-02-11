@@ -1,0 +1,291 @@
+
+
+
+/*#region Native Slider*/
+.containerNativeSlider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .NativeSlider {
+    position: relative;
+    background-color: rgba(60, 107, 238, 0.24);
+    width: auto;
+    height: calc(100vh - 65px);
+display: flex;
+justify-content: center;
+align-items: center;
+  
+  }
+  .NativeSlider::after{
+    content: "";
+  background: url(../w.jpg) no-repeat center center;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  }
+  
+  .NativeSlider img {
+    margin: 0px auto;
+    width: auto;
+    max-height: calc(70vh - 65px);
+    max-width: 50vw;
+    object-fit: contain;
+    display: none;
+
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(13, 141, 158);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .arrow-left {
+    left: 2%;
+  }
+  
+  .arrow-right {
+    right: 2%;
+  }
+  
+
+/*#endregion */
+
+
+/*#region poducts and cards*/
+
+#productsContainer .card {
+  width: 240px;
+  height: 340px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.432);
+
+}
+
+#productsContainer .img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 128, 0, 0.158);
+}
+
+#productsContainer .img-container img {
+  width: 100%;
+  height: auto  ;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+#productsContainer .img-container:hover img {
+  transform: scale(1.2);
+}
+
+#productsContainer .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#productsContainer .img-container:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+#productsContainer .overlay h3, .overlay p, .overlay button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+#productsContainer .overlay h3 {
+  top: 10%;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+#productsContainer .overlay p {
+  top: 40%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#productsContainer .overlay button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#productsContainer .add-to-cart {
+  top: 60%;
+  background: rgb(0, 158, 0);
+}
+#productsContainer .add-to-cart:hover {
+  background: rgb(1, 78, 1);
+}
+
+#productsContainer .details {
+  top: 80%;
+  background: rgb(66, 66, 247);
+}
+#productsContainer .details:hover {
+  background: rgb(25, 25, 110);
+}
+
+/*#endregion poducts*/
+
+
+/* #region about */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.category-card {
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.14rem 0.28rem rgba(0, 0, 0, 0.253);
+  background-color: beige;
+  box-sizing: border-box !important;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.category-card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.category-card .card-body {
+  text-align: center;
+}
+
+.category-card .card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.category-card .card-text {
+  color: #6c757d;
+}
+/* #endregion */
+
+/* #region contact us */
+
+#contact-form .form-control {
+  border-width: 2px;
+}
+
+#contact-form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+#contact-form .invalid-feedback {
+  display: block;
+}
+/* #endregion */
+
+
+header a:hover{
+color: greenyellow !important;
+background-color: rgb(47, 114, 168) !important;
+border-radius: 20px;
+}
+
+
+
+th,td{
+  vertical-align: middle ;
+   text-align: center;
+}
+
+.h3OfTotalCost{
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 25px;
+
+}
+.h3OfTotalCost span{
+  color: red;
+  
+}
+
+
+
+
+#scroll-icon {
+  color: red;
+  position: fixed;
+  right: 3.5rem;
+  bottom: 3rem;
+font-size: 50px;
+  display: none; 
+  
+ text-shadow: 10px 20px 7px red, 0px 0px 20px black 
+}
+
+#scroll-icon:hover {
+  cursor: pointer;
+}
+
+footer li{
+  color: blue;
+  font-weight: bold;
+}
+
+
+#productDetails img {
+  height: 350px;
+  object-fit: contain;
+}
+#productDetails div.row div.bg-light{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
